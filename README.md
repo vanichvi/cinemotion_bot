@@ -1,15 +1,23 @@
-## Запуск
+## CinemotionBot
 
-CinemotionBot - бот, который предлагает фильмы пользователям, основываясь на любимых жанрах.
-Чтобы запустить бота, необходимо выполнить docker compose из файла docker_compose.yml и запустить приложение из класса
-Application
-После этого бот станет доступен по ссылке https://t.me/cinemotionn_bot
+CinemotionBot is a pure functional Scala telegram bot written with ***telegramium*** library.  
+The bot recommends movies to users based on their favorite genres.
 
-## Команды
+## Usage
 
-Доступны команды:
-/film - получить рекомендуемый фильм
-/reset - сбросить все выбранные жанры и выбрать новые
+On start bot adds a user to a PostgreSQL database and suggest to select their favorite genres.  
+Database interaction is performed with ***doobie***. Then user can get a recommended film.
+
+## Utilities
+
+Films data is got via ***akka-http*** requests to a OMDb Api (https://www.omdbapi.com/) and then parsed with
+***circe***.
+To run and configure the application ***docker*** and ***pureconfig*** are used.
+
+## Commands
+
+* /film - get a recommended film
+* /reset - reset your favorite genres and choose new ones
 
 
 
