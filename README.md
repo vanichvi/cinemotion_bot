@@ -1,3 +1,9 @@
+[![telegramium](https://img.shields.io/badge/telegramium-8.69.0-blue)](https://github.com/apimorphism/telegramium)
+[![doobie](https://img.shields.io/badge/doobie-1.0.0--RC1-orange)](https://github.com/tpolecat/doobie)
+[![cats-effect](https://img.shields.io/badge/cats--effect-3.4.8-red)](https://github.com/typelevel/cats-effect)
+
+
+
 ## CinemotionBot
 
 CinemotionBot is a pure functional Scala telegram bot written with ***telegramium*** library.  
