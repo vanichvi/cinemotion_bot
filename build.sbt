@@ -1,4 +1,4 @@
-import Dependencies.*
+import Dependencies._
 
 ThisBuild / scalaVersion := "2.13.11"
 ThisBuild / version := "0.1.0-SNAPSHOT"
@@ -17,7 +17,7 @@ lazy val root = (project in file("."))
       pureConfig,
       liquibase,
       os
-    ) ++ tethys.modules ++ tofu.modules ++ tofu.loggingModules
+    ) ++ tofu.modules ++ tofu.loggingModules
       ++ akka.modules ++ telegramium.modules ++ doobie.modules
       ++ circe.modules
   )

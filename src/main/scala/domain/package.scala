@@ -1,11 +1,6 @@
-import io.circe.Decoder.Result
-import io.circe.{Decoder, Encoder, HCursor, KeyDecoder}
-import io.circe.generic.JsonCodec
-import tethys.derivation.semiauto._
-import tethys.{JsonReader, JsonWriter}
+import io.circe.{Decoder, Encoder}
 
 package object domain {
-  // @newtype
   case class FilmId(value: String)
 
   object FilmId {
@@ -14,7 +9,6 @@ package object domain {
 
   }
 
-  // @newtype
   case class FilmTitle(value: String)
 
   object FilmTitle {
@@ -23,7 +17,6 @@ package object domain {
 
   }
 
-  // @newtype
   case class FilmDescription(value: String)
 
   object FilmDescription {

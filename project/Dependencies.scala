@@ -32,15 +32,6 @@ object Dependencies {
       "io.circe" %% "circe-generic-extras" % "0.14.3"
     )
   }
-  object tethys {
-    val tethysVersion = "0.26.0"
-    val modules: List[ModuleID] = List(
-      "com.tethys-json" %% "tethys" % tethysVersion,
-      "com.tethys-json" %% "tethys-derivation" % tethysVersion,
-      "com.tethys-json" %% "tethys-jackson" % tethysVersion,
-      "com.tethys-json" %% "tethys-json4s" % tethysVersion
-    )
-  }
 
   object akka {
     val akkaVersion = "2.8.0"
@@ -55,7 +46,6 @@ object Dependencies {
   object tofu {
     val tofuVersion = "0.12.0.1"
     val modules: List[ModuleID] = List(
-      // "tf.tofu" %% "derevo-circe" % "0.13.0",
       "tf.tofu" %% "tofu-core-ce3" % tofuVersion,
       "tf.tofu" %% "tofu-kernel" % tofuVersion
     )

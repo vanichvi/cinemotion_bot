@@ -7,4 +7,5 @@ target
 .bloop/
 metals.sbt
 .DS_Store
+*.class
 .bsp/

@@ -2,9 +2,6 @@ package domain
 
 import doobie.Read
 import io.circe.{Decoder, Encoder}
-import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
-import tethys.{JsonObjectWriter, JsonReader, JsonWriter}
-import tethys.derivation.semiauto._
 
 import java.time.Year
 
